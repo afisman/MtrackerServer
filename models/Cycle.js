@@ -28,6 +28,10 @@ const cycleSchema = new Schema({
         type: String,
         enum: ['Abdomen', 'Head', 'Nipples', 'Pelvis']
     }],
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    }
 })
 
 module.exports = model('Cycle', cycleSchema);
