@@ -8,6 +8,10 @@ const userSchema = new Schema({
         ref: 'Cycle',
     }],
     username: String
-})
+},
+    {
+        timestamps: true,
+    }
+)
 
 module.exports = model('User', userSchema);

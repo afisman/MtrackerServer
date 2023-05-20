@@ -10,9 +10,9 @@ const cycleSchema = new Schema({
         type: Date,
         required: [true, 'You must fill the date']
     },
-    cycleDuration: {
-        type: Number
-    },
+    // cycleDuration: {
+    //     type: Number
+    // },
     periodDuration: {
         type: Number
     },
@@ -32,6 +32,10 @@ const cycleSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'User'
     }
-})
+},
+    {
+        timestamps: true,
+    }
+)
 
 module.exports = model('Cycle', cycleSchema);
