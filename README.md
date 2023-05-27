@@ -13,13 +13,11 @@ instructions on this video: https://www.youtube.com/watch?v=HhHzCfrqsoE or the f
 -Clone/ Download the  server repo, create a .env file where you paste the following variables 
 TOKEN_SECRET= 
 MONGODB_URI=
-SESS_SECRET=
 PORT=
 
 Token secret: can be any string of characters you want.
 MongoDB URI: this will be the URI you get from your Mongo Atlas account, it can also be a local cluster if you prefer to only run it locally,
 this would mean no deployment.
-Sess secret: can be any string of characters.
 PORT: Can be any port you choose, if running locally, needs to be the same number used in the client side, usually in the 5000- 5050 range is ok.
 
 Then run the following commands
