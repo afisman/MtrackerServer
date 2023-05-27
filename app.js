@@ -9,7 +9,7 @@ const app = express();
 require("./config")(app);
 
 app.use((req, res, next) => {
-    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Origin', 'https://mtracker0.netlify.app/');
     next();
 });
 
