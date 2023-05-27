@@ -30,5 +30,5 @@ npm start
 Needs to be run alongside the client side, which is in the following repository: https://github.com/afisman/MtrackerClient,
 follow the instructions on the readme to be able to run the client with no issues.
 
-For deployment to render.com (free deployment) follow the instructions in the following video: https://www.youtube.com/watch?v=bnCOyGaSe84,
+For deployment to render.com (free deployment for small APIs) follow the instructions in the following video: https://www.youtube.com/watch?v=68ubggfsQlE&t=1127s, deployment to render starts at min 11:50
 after deployment, the url received for the API will be the one used on the react app.
