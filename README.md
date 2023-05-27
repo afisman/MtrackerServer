@@ -14,11 +14,13 @@ instructions on this video: https://www.youtube.com/watch?v=HhHzCfrqsoE or the f
 TOKEN_SECRET= 
 MONGODB_URI=
 PORT=
+ORIGIN=
 
 Token secret: can be any string of characters you want.
 MongoDB URI: this will be the URI you get from your Mongo Atlas account, it can also be a local cluster if you prefer to only run it locally,
 this would mean no deployment.
 PORT: Can be any port you choose, if running locally, needs to be the same number used in the client side, usually in the 5000- 5050 range is ok.
+ORIGIN: Must be the url for the deployed frontend that will fetch the data from the server.
 
 Then run the following commands
 
