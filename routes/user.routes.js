@@ -3,13 +3,7 @@ const { isAuthenticated } = require("../middlewares/jwt.middlewares")
 const User = require('../models/User')
 
 
-router.get("/users", (req, res) => {
-    User
-        .find()
-        .populate('cycles')
-        .then(response => res.json(response))
-        .catch(err => res.status(500).json(err))
-})
+
 
 router.get("/:user_id", isAuthenticated, (req, res, next) => {
     const { user_id } = req.params
